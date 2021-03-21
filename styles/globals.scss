@@ -1,4 +1,4 @@
-@import '~antd/dist/antd.css';
+@import "~antd/dist/antd.css";
 
 html,
 body {
@@ -15,4 +15,106 @@ a {
 
 * {
   box-sizing: border-box;
+}
+.navbar {
+  height: 69px;
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+  padding: 0 40px;
+  transition: background-color 0.5s ease;
+  background-color: none;
+  .ant-menu {
+    display: flex;
+  }
+  .navbar-menu {
+    background: none;
+    border-bottom: none;
+    .ant-menu-item {
+      color: #fff;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.8;
+    }
+  }
+  .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover,
+  .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu:hover,
+  .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-active,
+  .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-active,
+  .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-open,
+  .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-open,
+  .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected,
+  .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-selected {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+  }
+}
+
+.main-container {
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+}
+.navbar.affixed {
+  transition: background-color 0.5s ease;
+  background-color: #fff;
+  box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px,
+    rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+  .ant-menu-item {
+    color: #000;
+  }
+  .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover,
+  .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu:hover,
+  .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-active,
+  .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-active,
+  .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-open,
+  .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-open,
+  .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected,
+  .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-selected {
+    color: black;
+    border-bottom: 2px solid black;
+  }
+}
+
+.section-product-container {
+  margin: 0 15px;
+  padding: 0 40px 0 40px;
+}
+.label-product {
+  color: #282828;
+  font-weight: 500;
+  margin: 15px 0 15px 0;
+  text-align: center;
+}
+
+.footer-section-one{
+  height: 351px;
+  margin-top: 50px;
+  background: #282828;
+  border-bottom: 1px solid #282828;
+  border-style: solid;
+  padding: 56px 200px 66px 200px;
+  label{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+  }
+}
+
+.footer-section-two{
+  height: 116px;
+  background: #282828;
+}
+.footer-menu-container{
+  list-style-type:none;
+  padding-left: 0;
+  margin-top: 15px;
+  li{
+    color: #939393;
+    line-height:23px;
+    font-size: 13px;
+    a:hover{
+      color:#b4b4b4
+    }
+  }
 }
